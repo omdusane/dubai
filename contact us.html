@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This is one page website for TCIA Global.">
+    <meta name="author" content="Jyoti">
+    <title>Contact Us Page</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
+
+    <!-- Bootstrap + Ollie main styles -->
+    <link rel="stylesheet" href="assets/css/ollie.css">
+
+    
+    <script>
+        
+        // JavaScript function to redirect to new.html
+        function redirectToNew() {
+            window.location.href = 'home.html';
+        }
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+
+    <header id="home" class="header">
+        <!-- Move overlay inside the contact section -->
+        <div class="contact overlay"></div>
+        <div class="container">
+            <!-- Your existing content here -->
+            <section class="contact">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <br>
+                        <h1>Contact Us</h1>
+                        <br>
+                        <p>Get in touch with us for any inquiries or collaboration.</p>
+                    </div>
+        
+                    <!-- Contact Form -->
+                    <form id="contactForm" action="process_contact_form.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="company_name" class="form-control" placeholder="Company Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <textarea name="description" class="form-control" rows="5" placeholder="Enter your description" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                    <div class="section-title">
+                        <br>
+                        <p>Our Address: Office No 135, Vishwaroop IT Park, Raghuleela Arcade, Vashi, Navi Mumbai - 400703.</p>
+                        <p>Email Us: hr@tciaglobal.com, tech.support@tciaglobal.com</p>
+                        <p>Call Us: +91 90040 06558</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+
+    <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container-fluid" style="padding-left: 150px; padding-right: 150px;">
+            <a class="navbar-brand" href=""><img src="img/Logo_TCIA Global.png" alt="" class="brand-img" style="max-height: 60px;"></a>
+            
+            <!-- Close button in the top-right corner -->
+            <a class="nav-link" href="javascript:void(0);" onclick="redirectToNew();" aria-haspopup="true" aria-expanded="false" style="margin-left: auto;">Close</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: transparent;
+            }
+
+        h1 {
+            font-weight: bold;
+            color: #010c32;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #010c32;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            line-height: 1.6;
+            color: #010c32;
+            text-align: justify;
+            font-weight: bold;
+            font-size: 1.10em; /* Example font size */
+        }
+        /* Add or modify styles as needed */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and transparency */
+            z-index: -1; /* Move the overlay behind the content */
+        }
+
+        .contact {
+            position: relative;
+            z-index: 1; /* Ensure the content is above the overlay */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Section (Add your navigation code here) -->
+
+    <div class="contact overlay"></div>
+        <div class="container">
+
+
+    <!-- Your existing JavaScript code -->
+
+    <script>
+        // Add JavaScript to handle navbar transparency on scroll
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>
+

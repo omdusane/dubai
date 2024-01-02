@@ -42,7 +42,7 @@ def contact_us():
             subject = request.form["subject"]
             company_name = request.form["company_name"]
             description = request.form["description"]
-            msg = Message('TCIA Dubai Website Query', sender = 'omdusane8@gmail.com', recipients = ['omdusane8@gmail.com'])
+            msg = Message('TCIA Dubai Website Query', sender = '', recipients = [''])
             msg.body = f"Name: {name}\nEmail: {email}\nSubject: {subject}\nCompany Name: {company_name}\nDescription: {description}"
             mail.send(msg)
 

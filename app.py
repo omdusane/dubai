@@ -15,7 +15,7 @@ app.config['MAIL_PASSWORD']=os.getenv('MAIL_PASSWORD')
 app.config['MAIL_DEFAULT_SENDER']=os.getenv('MAIL_USERNAME')
 mail = Mail(app)
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/home", methods=['GET', 'POST'])
 def home():
     return render_template("home.html")
 
@@ -42,11 +42,12 @@ def contact_us():
             subject = request.form["subject"]
             company_name = request.form["company_name"]
             description = request.form["description"]
-            msg = Message('TCIA Dubai Website Query', sender = '', recipients = [''])
-            msg.body = f"Name: {name} \n Email: {email} \n Subject: {subject} \n Company Name: {company_name} \n Description: {description}"
+            msg = Message('TCIA Dubai Website Query', sender = 'omdusane8@gmail.com', recipients = ['omdusane8@gmail.com'])
+            msg.body = f"Name: {name}\nEmail: {email}\nSubject: {subject}\nCompany Name: {company_name}\nDescription: {description}"
+            mail.send(msg)
 
             flash("Form Submitted Successfully")
-            return redirect(url_for(contact_us))
+            return redirect(url_for('contact_us'))
         except:
             flash("Internal Server Error", 'error')
             return redirect(url_for(contact_us))
@@ -57,17 +58,17 @@ def contact_us():
 def sap_services():
     return render_template('sap-services.html')
 
-@app.route('/assesment-services',methods=['GET'])
+@app.route('/assessment-services',methods=['GET'])
 def assesment_services():
-    return render_template('assesment-services.html')
+    return render_template('assessment-services.html')
 
 @app.route('/it-services',methods=['GET'])
 def it_services():
     return render_template('it-services.html')
 
-@app.route('/cloud-services',methods=['GET'])
+@app.route('/services',methods=['GET'])
 def cloud_services():
-    return render_template('cloud-services.html')
+    return render_template('services.html')
 
 @app.route('/trainings',methods=['GET'])
 def trainings():

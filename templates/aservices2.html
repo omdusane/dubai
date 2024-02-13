@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cloud Road Map & Strategy Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                <a href="/" class="navbar-brand">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="/" class="nav-item nav-link">Home</a>
+                        <a href="/product" class="nav-item nav-link active">Products</a>
+                        <a href="/store" class="nav-item nav-link">Store</a>
+                        <a href="/about" class="nav-item nav-link">About</a>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu bg-light rounded-0 m-0">
+                                <a href="/feature" class="dropdown-item">Features</a>
+                                <a href="/blog" class="dropdown-item">Blog Article</a>
+                                <a href="/testimonial" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Country</a>
+                            <div class="dropdown-menu bg-light rounded-0 m-0">
+                                <a href="#" class="dropdown-item">Dubai</a>
+                                <a href="https://tciaglobal.com/" class="dropdown-item">India</a>
+                                <a href="#" class="dropdown-item active">Malaysia</a>
+                            </div>
+                            </div>
+                        </div>
+                        <style>
+                            .custom-btn {
+                                background-color: transparent;
+                                border: none;
+                                padding: 0;
+                                cursor: pointer;
+                                transition: color 0.3s;
+                            }
+                        
+                            .custom-btn:hover a {
+                                color: #f06161;
+                            }
+                        
+                            .custom-btn a {
+                                display: block;
+                                padding: 10px;
+                                color: #252c30;
+                                text-decoration: none;
+                            }
+                        
+                            /* Additional styles for the dropdown menu */
+                            .nav-item.dropdown .nav-link {
+                                color: #252c30;
+                                transition: color 0.3s;
+                            }
+                        
+                            .nav-item.dropdown:hover .nav-link {
+                                color: #f06161;
+                            }
+                        </style>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+<!-- Navbar End-->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-dark mb-4 animated slideInDown">Products</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/product">Products</a></li>
+                    <li class="breadcrumb-item"><a href="/product/assessment-services">Assessment Services</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Cloud Road Map & Strategy Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+<!-- Assessment Services -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="container">
+        <div class="section-title text-center mx-auto" style="max-width: 850px;">
+            <p class="fs-5 fw-medium fst-italic text-primary">Cloud Road Map & Strategy Services</p>
+            <h1 class="display-6">Develop a clear and effective plan for your cloud journey</h1>
+        </div>
+        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Welcome to Cloud Road Map & Strategy Services:</h2>
+        <h4 class="wow fadeInUp" data-wow-delay="0.3s">Your Guide to a Seamless Cloud Journey!</h4>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Embarking on a cloud journey requires careful planning and a well-defined strategy. Whether you are migrating to the cloud, optimizing your existing cloud environment, or considering a multicloud approach, our Cloud Road Map & Strategy Services are designed to help you develop a clear and effective plan tailored to your unique business needs.</p>
+
+        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Here's how our services can pave the way for your successful cloud journey:</h2>
+        <br>
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Assessment of Current State:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">We begin by understanding your existing IT infrastructure, applications, and business objectives. Through a thorough assessment, we identify opportunities, challenges, and areas for improvement.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Business and IT Alignment:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Aligning your cloud strategy with your business goals is paramount. Our consultants work closely with your team to ensure that the proposed cloud solutions directly contribute to achieving your organizational objectives.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Cloud Adoption Framework:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Leverage our expertise in crafting a robust Cloud Adoption Framework. This framework will serve as a blueprint for your cloud journey, providing guidelines for governance, security, and operational best practices.</p>
+        
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Migration Planning:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">If migration is part of your cloud journey, we develop a comprehensive migration plan. This includes selecting the right migration approach, minimizing downtime, and ensuring a smooth transition of your applications and data to the cloud.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Cost Optimization Strategy:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">A key aspect of our services is to create a cost optimization strategy that aligns with your budgetary constraints. We help you identify cost-saving opportunities while ensuring that your cloud infrastructure meets performance requirements.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Security and Compliance:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Prioritize security and compliance throughout your cloud journey. Our consultants provide a thorough analysis of security measures, implement best practices, and ensure that your cloud environment complies with industry regulations.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Performance Monitoring and Optimization:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Implement tools and processes for ongoing performance monitoring and optimization. This ensures that your cloud resources are utilized efficiently and that you continue to benefit from the latest advancements in cloud technology.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Multicloud Strategy:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">If a multicloud approach aligns with your business objectives, we help you develop a multicloud strategy. This involves selecting the right cloud providers, managing workloads across multiple clouds, and optimizing for flexibility and resilience.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Staff Training and Skill Development:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Equip your team with the necessary skills for managing and optimizing your cloud environment. We provide training programs tailored to your specific cloud technologies and platforms.</p>
+        
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Continuous Improvement:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Your cloud journey doesn't end with implementation. We emphasize the importance of continuous improvement, regularly reviewing and updating your cloud strategy to adapt to evolving business needs and technological advancements.</p>
+
+        <p  class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">At Cloud Road Map & Strategy Services, we understand that every organization's journey to the cloud is unique. Our goal is to guide you through the complexities, providing a road map that ensures a seamless and successful transition to the cloud.</p>
+
+        <p  class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Ready to chart your course to the cloud? Contact us today to schedule a consultation and let our experts help you develop a clear and effective plan for your cloud journey!</p>
+
+    </div>
+</div>
+<!-- Consulting SAP End -->
+
+
+
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Dubai, UAE</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 90040 06558</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>hr@tciaglobal.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="/about">About Us</a>
+                    <a class="btn btn-link" href="/contact">Contact Us</a>
+                    <a class="btn btn-link" href="/product">Our Services</a>
+                    <!--<a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>-->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Newsletter</h4>
+                    <p>Stay in the know with our website's newsletter.</p>
+                    <div class="position-relative w-100">
+                        <form action="/newsletter-signup" method="post">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" name="email" placeholder="Your email">
+                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium" href="#">TCiA GLOBAL Dubai</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-medium">TCIA India</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

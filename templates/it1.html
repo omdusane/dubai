@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Advisory Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                <a href="/" class="navbar-brand">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="/" class="nav-item nav-link">Home</a>
+                        <a href="/product" class="nav-item nav-link active">Products</a>
+                        <a href="/store" class="nav-item nav-link">Store</a>
+                        <a href="/about" class="nav-item nav-link">About</a>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu bg-light rounded-0 m-0">
+                                <a href="/feature" class="dropdown-item">Features</a>
+                                <a href="/blog" class="dropdown-item">Blog Article</a>
+                                <a href="/testimonial" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Country</a>
+                            <div class="dropdown-menu bg-light rounded-0 m-0">
+                                <a href="#" class="dropdown-item">Dubai</a>
+                                <a href="https://tciaglobal.com/" class="dropdown-item">India</a>
+                                <a href="#" class="dropdown-item active">Malaysia</a>
+                            </div>
+                            </div>
+                        </div>
+                        <style>
+                            .custom-btn {
+                                background-color: transparent;
+                                border: none;
+                                padding: 0;
+                                cursor: pointer;
+                                transition: color 0.3s;
+                            }
+                        
+                            .custom-btn:hover a {
+                                color: #f06161;
+                            }
+                        
+                            .custom-btn a {
+                                display: block;
+                                padding: 10px;
+                                color: #252c30;
+                                text-decoration: none;
+                            }
+                        
+                            /* Additional styles for the dropdown menu */
+                            .nav-item.dropdown .nav-link {
+                                color: #252c30;
+                                transition: color 0.3s;
+                            }
+                        
+                            .nav-item.dropdown:hover .nav-link {
+                                color: #f06161;
+                            }
+                        </style> 
+                       
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+<!-- Navbar End-->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-dark mb-4 animated slideInDown">Products</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/product">Products</a></li>
+                    <li class="breadcrumb-item"><a href="/product/it-services">IT Services</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Advisory Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+<!-- Assessment Services -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="container">
+        <div class="section-title text-center mx-auto" style="max-width: 850px;">
+            <p class="fs-5 fw-medium fst-italic text-primary">Advisory Services</p>
+            <h1 class="display-6">Strategic guidance to navigate IT challenges and optimize technology investments for business success</h1>
+        </div>
+        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Welcome to Advisory Services:</h2>
+        <h4 class="wow fadeInUp" data-wow-delay="0.3s">Navigating IT Challenges for Business Success</h4>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">In today's rapidly evolving business landscape, the effective use of technology is paramount to success. As businesses increasingly rely on IT infrastructure to drive innovation and efficiency, the need for strategic guidance becomes more critical than ever. Our Advisory Services are designed to provide comprehensive support, ensuring that your organization not only navigates IT challenges but also optimizes technology investments for sustainable business success.</p>
+
+        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Cloud Infrastructure Expertise</h2>
+        <br>
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Implementation:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Our team specializes in the seamless implementation of cloud infrastructure, with a focus on leading platforms such as AWS and Azure. We tailor solutions to meet your unique requirements, ensuring a robust foundation for your digital operations.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Custom Design Solutions:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Leveraging our expertise, we create and deliver custom design solutions that align with your business objectives. Our approach is centered around designing solutions that are not only effective but also scalable and adaptable to future needs.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Cloud Advisory Services:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Stay ahead of the curve with our cloud advisory services. Our experts provide strategic insights to help you harness the full potential of cloud technology, optimizing your operations for maximum efficiency and cost-effectiveness.</p>
+        
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Migration & Deployment:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Transitioning to the cloud requires careful planning and execution. We guide you through the migration and deployment process, ensuring a smooth transition with minimal disruption to your business operations.</p>
+
+        <h2 class="wow fadeInUp" data-wow-delay="0.3s">DevOps Solutions</h2>
+        <br>
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Native Application & Product Development:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Embrace innovation with our DevOps solutions. We specialize in native application and product development, leveraging the latest technologies to enhance your digital presence and drive business growth.</p>
+
+        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Process Optimization</h2>
+        <br>
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">ITIL™ & ITSM Consulting & Solutioning:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Enhance your IT service management with our ITIL™ and ITSM consulting services. We provide solutions that align with industry best practices, ensuring efficient and effective IT service delivery.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Project Management Consulting & Solutioning:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Successful projects require strategic planning and execution. Our project management consulting services are designed to help you navigate complex projects, delivering results on time and within budget.</p>
+
+        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Information Security and Quality Management</h2>
+        <br>
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Auditing Services:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Ensure the security of your information systems with our auditing services. Our team conducts thorough assessments, identifying potential vulnerabilities and providing recommendations for enhanced security measures.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">ISO 27001 Information Security:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Achieve and maintain compliance with ISO 27001 standards with our expert guidance. We assist in the implementation of information security management systems to safeguard your valuable data.</p>
+        
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">ISO 20000 Quality Management:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Elevate your service quality with ISO 20000 compliance. Our services focus on implementing quality management systems that enhance the efficiency and reliability of your IT services.</p>
+
+        <p  class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">At our company, we are committed to being your trusted partner in navigating the complex IT landscape. Our Advisory Services empower your organization to make informed decisions, optimize technology investments, and achieve sustained success in today's digital era. Contact us today to embark on a journey of IT excellence.</p>
+
+    </div>
+</div>
+<!-- Consulting SAP End -->
+
+
+
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Dubai, UAE</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 90040 06558</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>hr@tciaglobal.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Quick Links</h4>
+		    <a class="btn btn-link" href="/about">About Us</a>
+                    <a class="btn btn-link" href="/contact">Contact Us</a>
+                    <a class="btn btn-link" href="/product">Our Services</a>
+                    <!--<a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>-->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Newsletter</h4>
+                    <p>Stay in the know with our website's newsletter.</p>
+                    <div class="position-relative w-100">
+                        <form action="/newsletter-signup" method="post">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" name="email" placeholder="Your email">
+                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium" href="#">TCiA GLOBAL Dubai</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-medium">TCIA India</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

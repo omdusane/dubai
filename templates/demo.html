@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    #search-form {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #search-input {
+      padding: 10px;
+      width: 300px;
+    }
+
+    #search-button {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #search-results {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .result-item {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Website Search</h1>
+  </header>
+
+  <section>
+    <div id="search-form">
+      <input type="text" id="search-input" placeholder="Enter your search">
+      <button id="search-button" onclick="search()">Search</button>
+    </div>
+
+    <ul id="search-results"></ul>
+  </section>
+
+  <script>
+    function search() {
+      // This is a placeholder function for demonstration purposes
+      // In a real scenario, you would perform an AJAX request to the server for searching
+
+      var searchInput = document.getElementById('search-input').value;
+      var searchResults = document.getElementById('search-results');
+
+      // Clear previous search results
+      searchResults.innerHTML = '';
+
+      // Dummy data for demonstration
+      var dummyData = [
+        "Result 1: Lorem ipsum dolor sit amet.",
+        "Result 2: Consectetur adipiscing elit.",
+        "Result 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      ];
+
+      // Display search results
+      dummyData.forEach(function (result) {
+        var li = document.createElement('li');
+        li.className = 'result-item';
+        li.textContent = result;
+        searchResults.appendChild(li);
+      });
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DevOps</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                <a href="/" class="navbar-brand">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="/" class="nav-item nav-link">Home</a>
+                        <a href="/product" class="nav-item nav-link active">Products</a>
+                        <a href="/store" class="nav-item nav-link">Store</a>
+                        <a href="/about" class="nav-item nav-link">About</a>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu bg-light rounded-0 m-0">
+                                <a href="/feature" class="dropdown-item">Features</a>
+                                <a href="/blog" class="dropdown-item">Blog Article</a>
+                                <a href="/testimonial" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Country</a>
+                            <div class="dropdown-menu bg-light rounded-0 m-0">
+                                <a href="#" class="dropdown-item">Dubai</a>
+                                <a href="https://tciaglobal.com/" class="dropdown-item">India</a>
+                                <a href="#" class="dropdown-item active">Malaysia</a>
+                            </div>
+                            </div>
+                        </div>
+                        <style>
+                            .custom-btn {
+                                background-color: transparent;
+                                border: none;
+                                padding: 0;
+                                cursor: pointer;
+                                transition: color 0.3s;
+                            }
+                        
+                            .custom-btn:hover a {
+                                color: #f06161;
+                            }
+                        
+                            .custom-btn a {
+                                display: block;
+                                padding: 10px;
+                                color: #252c30;
+                                text-decoration: none;
+                            }
+                        
+                            /* Additional styles for the dropdown menu */
+                            .nav-item.dropdown .nav-link {
+                                color: #252c30;
+                                transition: color 0.3s;
+                            }
+                        
+                            .nav-item.dropdown:hover .nav-link {
+                                color: #f06161;
+                            }
+                        </style> 
+                        
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+<!-- Navbar End-->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-dark mb-4 animated slideInDown">Products</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/product">Products</a></li>
+                    <li class="breadcrumb-item"><a href="/product/it-services">IT Services</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">DevOps</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+<!-- Assessment Services -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="container">
+        <div class="section-title text-center mx-auto" style="max-width: 850px;">
+            <p class="fs-5 fw-medium fst-italic text-primary">DevOps</p>
+            <h1 class="display-6">Streamline development and operations with DevOps practices, fostering collaboration and accelerating software delivery</h1>
+        </div>
+        <h3 class="wow fadeInUp" data-wow-delay="0.3s">Welcome to DevOps:</h3>
+        <h4 class="wow fadeInUp" data-wow-delay="0.3s">Streamline Development and Operations with DevOps Excellence</h4>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Welcome to the realm of DevOps - a transformative approach that combines cultural philosophies, practices, and cutting-edge tools to elevate your organization's ability to deliver applications and services at unprecedented velocity. By fostering collaboration, accelerating software delivery, and ensuring reliability, DevOps is the catalyst for innovation and efficiency in the digital era.</p>
+
+        <h3 class="wow fadeInUp" data-wow-delay="0.3s">Features of DevOps:</h3>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Speed:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">DevOps practices empower you to move at the velocity needed to innovate faster, adapt to changing markets, and achieve greater efficiency in driving business results.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Rapid Delivery:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Increasing the pace of releases allows you to improve your products faster, gaining a competitive advantage in the dynamic market landscape.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Reliability:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">DevOps practices, such as continuous integration and continuous delivery, ensure the quality of application updates and infrastructure changes. This enables you to deliver at a rapid pace while maintaining an optimum experience for end users.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Improved Collaboration:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Under the DevOps model, developers and operations teams collaborate closely, share responsibilities, and combine workflows. This reduces inefficiencies and saves time, creating a seamless working environment.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">Security:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">DevOps adoption doesn't mean sacrificing security. Utilize automated, integrated security testing tools to ensure that your applications and infrastructure remain secure throughout the development and delivery process.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">DevOps is a Never-ending Process of Continual Improvement:</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Jez Humble emphasizes that DevOps is not a goal but an ongoing journey of continual improvement, aligning with the evolving needs of your organization.</p>
+
+
+        <h3 class="wow fadeInUp" data-wow-delay="0.3s">Learnings and Tools in DevOps:</h3>
+        <ul class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">
+            <li>GitLab: The largest and most advanced development platform globally, facilitating collaborative development and code management.</li>
+            <li>JSON and YAML: Lightweight data-interchange formats crucial for efficient data exchange and configuration.</li>
+            <li>Bash Scripting: Automate repetitive tasks on Linux filesystems for enhanced efficiency.</li>
+            <li>Python: An interpreted high-level programming language, offering versatility in scripting and automation.</li>
+            <li>Docker: A platform for delivering software in containers, providing consistency and scalability.</li>
+            <li>Kubernetes: An open-source system automating deployment, scaling, and management of containerized applications.</li>
+            <li>Terraform: Open-source infrastructure as code software tool for managing cloud services consistently.</li>
+            <li>Ansible: An open-source automation tool simplifying IT automation tasks.</li>
+            <li>Jenkins: An automation server facilitating reliable building, testing, and deployment of software.</li>
+            <li>SonarQube: Empowering developers to write cleaner and safer code through continuous code quality analysis.</li>
+        </ul>
+
+        <h3 class="wow fadeInUp" data-wow-delay="0.3s">Job Opportunities in DevOps</h3>
+        <ul class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">
+            <li>DevOps Expert</li>
+            <li>DevOps Engineer</li>
+            <li>DevOps Developer</li>
+            <li>DevOps Lead</li>
+            <li>Platform Engineer</li>
+            <li>System Engineer</li>
+            <li>Site Reliability Engineer</li>
+            <li>Solution Architect</li>
+        </ul>
+
+        
+        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Commonly Asked Questions about DevOps</h2>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">1. How do you define DevOps?</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">DevOps is a transformative approach that combines the development and operations practices of IT software development. It promotes a culture of collaboration and information sharing, breaking down silos for more efficient and innovative ways to automate and speed up the software delivery process.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">2. Why does DevOps matter?</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">DevOps is essential when development and operations teams work on the same system but operate with different thought processes. It facilitates cooperation between these teams, aligning methodologies and processes for mutual benefit.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">3. How does DevOps differ in IT and IoT?</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">DevOps in IoT involves managing physical components, devices, and legacy systems in addition to software. This complexity adds an extra layer to the automation process compared to traditional IT DevOps.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">4. Why can DevOps be extended to product engineering services?</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">DevOps is applicable to product engineering services in the IoT era, where real-time updates and management of software inside electronic devices are crucial. It helps in handling real-time failure scenarios and ensures efficient monitoring and updates.</p>
+
+        <h5 class="wow fadeInUp" data-wow-delay="0.3s">5. What benefits can an organization get with DevOps transformation?</h5>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">Key benefits include reduced time-to-market, improved collaboration, customer delight through faster releases, operational efficiency, and cost savings through high-scale automation.</p>
+
+        <h3 class="wow fadeInUp" data-wow-delay="0.3s">Elevate Your Organization's Potential with DevOps Excellence</h3>
+        <p class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">At our company, we specialize in guiding organizations through the transformative journey of DevOps. Our solutions ensure that you harness the full potential of DevOps practices, fostering collaboration, accelerating software delivery, and achieving operational excellence. Contact us today to embark on a journey of continuous improvement and efficiency with DevOps.</p>
+
+    </div>
+</div>
+<!-- Assessment End --> 
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Dubai, UAE</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 90040 06558</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>hr@tciaglobal.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Quick Links</h4>
+		    <a class="btn btn-link" href="/about">About Us</a>
+                    <a class="btn btn-link" href="/contact">Contact Us</a>
+                    <a class="btn btn-link" href="/product">Our Services</a>
+                    <!--<a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>-->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Newsletter</h4>
+                    <p>Stay in the know with our website's newsletter.</p>
+                    <div class="position-relative w-100">
+                        <form action="/newsletter-signup" method="post">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" name="email" placeholder="Your email">
+                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium" href="#">TCiA GLOBAL Dubai</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-medium">Jyoti Prasad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

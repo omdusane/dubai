@@ -31,6 +31,21 @@ def about_us():
 @app.route("/product", methods=['GET'])
 def product():
     return render_template("product.html")
+@app.route("/product/automation-services", methods=['GET'])
+def automation_services():
+    return render_template("autoservices.html")
+
+@app.route("/product/automation-services/cctv-solutions", methods=['GET'])
+def cctv_solutions():
+    return render_template("cctv.html")
+
+@app.route("/product/automation-services/home-automation-solutions", methods=['GET'])
+def home_automation_solutions():
+    return render_template("homeauto.html")
+
+@app.route("/product/automation-services/biometric-solutions", methods=['GET'])
+def biometric_solutions():
+    return render_template("biometric.html")
 
 @app.route("/product/sap-services", methods=['GET'])
 def sap_services():
